@@ -9,11 +9,6 @@ class Movie < ActiveRecord::Base
     # if ratings_list is nil, retrieve ALL movies
     if ratings_list.nil?
       return Movie.all
-<<<<<<< HEAD
-=======
-    elsif ratings_list.empty?
-      return Movie.all
->>>>>>> 5041256503b584872f9e266cb9c7f67c266aae93
     else
       return Movie.where(rating: ratings_list)
     end
